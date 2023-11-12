@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CLINICA AC</h1>
+    <nav>
+        
+       
+        <ul>
+                    <li><a href="#" onclick="showStep('datos_personales')">Datos Personales</a></li>
+                    <li><a href="#" onclick="showStep('datos_familiar')">Datos Familiar</a></li>
+                    <li><a href="#" onclick="showStep('enfermedad')">Enfermedad</a></li>
+                    
+                   
+        <li><a href="#" onclick="showStep('internamiento')">Internamiento</a></li>
+                </ul>
+            </nav>
+        
+            <section>
+    <section>
+        <div class="container">
+
+            <form >
+
+                <div class="step step-1  active" id="datos_personales">
+                    <h1>DATOS PERSONALES</h1>
+                        <h4>Llenar los siguienes datos.</h4>
+                    <div class="form-group">
+                        
+                        <label for="firstName">Nombre</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Apellido</label>
+                        <input type="text" id="lastName" name="lastName">
+                </div>
+                <div class="form-group">
+                    <label for="Numero">Numero Telefonico</label>
+                    <input type="number" id="Numero" name="Numero">
+                   </div>
+                   <div class="form-group">
+                    <label for="Edad">Edad</label>
+                    <input type="number" id="Edad" name="Edad">
+                   </div>
+                   <button type="button" class="next-btn">Siguiente</button>
+                </div>
+
+                <div class="step step-2  " id="datos_familiar">
+                    <H1>DATOS FAMILIAR</H1>
+                    <div class="form-group">
+                        
+
+                        <label for="NombreC">Nombre Completo</label>
+                        <input type="text" id="NombreC" name="NombreC">
+                    </div>
+                    <div class="form-group">
+                        <label for="EdadP">Edad</label>
+                        <input type="number" id="EdadP" name="EdadP">
+                    </div>
+                    <div class="form-group">
+                        <label for="Parentesco">Parentesco</label>
+                        <input type="text" id="Parentesco" name="Parentesco">
+                    </div>
+                    <button type="button" class="previous-btn">Atras</button>
+                    <button type="button" class="next-btn">Siguiente</button>
+
+                </div>
+
+                <div class="step step-3" id="enfermedad">
+                    <h1>ENFERMEDAD</h1>
+                    <div class="form-group">
+                        <label for="Enfemerdad">Enfermedad</label>
+                        <input type="text" id="Enfemerdad" name="Enfermedad">
+                    </div>
+                    <div class="form-group">
+                        <label for="TEnfemerdad">Tipo de Enfermedad</label>
+                        <input type="text" id="TEnfemerdad" name="TEnfermedad">
+                    </div>
+                    <button type="button" class="previous-btn">Atras</button>
+                    <button type="button" class="next-btn">Siguiente</button>
+                </div>
+
+                <div class="step step-4 " id="internamiento">
+                    <h1>INTERNAMIENTO</h1>
+                    <div class="form-group">
+                        <label for="internamiento">Internamiento realizados</label>
+                        <input type="text" id="internamiento" name="internamiento">
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha</label>
+                        <input type="number" id="fecha" name="fecha">
+                    </div>
+                    <div class="form-group">
+                        <label for="centro">Centro Medico</label>
+                        <input type="text" id="centro" name="centro">
+                    </div>
+                    <button type="button" class="previous-btn">Atras</button>
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </div>
+                
+            </form>
+
+        </div>
+    </section>
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>
